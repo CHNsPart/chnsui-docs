@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CHNsPart/chnsui-docs.git"
+    "url": "git+https://github.com/CHNsPart/chnsui.git"
   },
   "author": "Touhidul Islam Chayan",
   "license": "MIT",
