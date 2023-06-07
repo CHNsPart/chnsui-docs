@@ -1,0 +1,75 @@
+# Paragraph
+
+The `Paragraph` component is a versatile text component that can display text in various styles and colors. It is built using `class-variance-authority` for easy class management and comes with a variety of default and custom variants to choose from.
+
+## Props:
+
+| Prop name  | Type      | Description                                                                                                                                                                                                              | Default value       |
+| ---------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
+| className  | string    | Additional class name(s) to be added to the component's root element.                                                                                                                                                    | `""` (empty string) |
+| children   | ReactNode | The content to be rendered inside the paragraph element.                                                                                                                                                                 | `undefined`         |
+| variant    | string    | The visual style of the paragraph. Valid values: `"default"`, `"darkGlass"`, `"glass"`, `"bg"`, `"bgGlass"`, `"transparent"`.                                                                                            | `"default"`         |
+| colors     | string    | The color scheme of the paragraph. Valid values: `"primary"`, `"secondary"`, `"tertiary"`, `"danger"`, `"warning"`, `"success"`, `"info"`, `"dark"`, `"light"`.                                                          | `"primary"`         |
+| badge      | string    | The background color scheme of a badge to be displayed on the paragraph. Valid values: `"default"`, `"secondary"`, `"tertiary"`, `"danger"`, `"warning"`, `"success"`, `"info"`, `"dark"`, `"light"`, `null` (no badge). | `null`              |
+| sizes      | string    | The size of the text. Valid values: `"sm"`, `"md"`, `"lg"`, `"xl"`, `null` (default size).                                                                                                                               | `null`              |
+| weight     | string    | The font weight. Valid values: `"thin"`, `"light"`, `"normal"`, `"medium"`, `"semibold"`, `"bold"`, `"extrabold"`, `"black"`, `null` (default font weight).                                                              | `null`              |
+| align      | string    | The text alignment. Valid values: `"left"`, `"center"`, `"right"`, `"justify"`, `null` (default text alignment).                                                                                                         | `null`              |
+| transform  | string    | The text transform. Valid values: `"uppercase"`, `"lowercase"`, `"capitalize"`, `"normalcase"`, `null` (no text transform).                                                                                              | `null`              |
+| decoration | string    | The text decoration. Valid values: `"underline"`, `"lineThrough"`, `"noUnderline"`, `null` (no text decoration).                                                                                                         | `null`              |
+| bg         | boolean   | Whether to apply a background color to the paragraph or not. Valid values: `true`, `false`.                                                                                                                              | `null`              |
+
+## Expample
+
+And here's an example of how to use the `Paragraph` component with some of its props:
+
+```jsx
+import Paragraph from "./components/Paragraph";
+
+function MyComponent() {
+  return (
+    <>
+      <Paragraph variant={"transparent"} colors='warning' badge={"warning"}>
+        This is a warning message.
+      </Paragraph>
+      <Paragraph sizes='lg' align='center' decoration='lineThrough'>
+        This paragraph has large font size, centered text, and a line-through
+        decoration.
+      </Paragraph>
+    </>
+  );
+}
+```
+
+### Full Example:
+
+```jsx
+import Paragraph from "./Paragraph";
+
+const App = () => {
+  return (
+    <>
+      <Paragraph bg colors='secondary'>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptatem
+        incidunt deleniti modi voluptate, hic cumque adipisci eveniet error
+        exercitationem, vitae voluptatum ducimus. Maiores enim totam aperiam
+        explicabo a quae. Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Sit voluptatem incidunt deleniti modi voluptate, hic cumque
+        adipisci eveniet error exercitationem, vitae voluptatum ducimus. Maiores
+        enim totam aperiam explicabo a quae.
+      </Paragraph>
+
+      <div className='w-full flex flex-row gap-5'>
+        <Paragraph colors='dark' variant={"transparent"} badge={"dark"}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum at
+          consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Illum at consectetur.
+        </Paragraph>
+        <Paragraph colors='warning' badge={"warning"} variant={"transparent"}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum at
+          consectetur.
+        </Paragraph>
+      </div>
+    </>
+  );
+};
+```

@@ -1,0 +1,17 @@
+.body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: auto;
+  background-color: black;
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

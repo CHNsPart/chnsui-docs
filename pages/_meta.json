@@ -1,0 +1,19 @@
+{
+  "index":{
+    "title": "Home",
+    "type": "page"
+  },
+  "introduction": "Introduction",
+  "getting-started": "Getting Started",
+  "components": "Components",
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://facebook.com/chnspart",
+    "newWindow": true
+  }
+}

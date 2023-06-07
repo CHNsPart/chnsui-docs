@@ -1,0 +1,63 @@
+# Button
+
+A customizable button component with various color and size options.
+
+```jsx filename="MyComponent.tsx" copy
+import { Button } from "chnsui";
+
+function MyComponent() {
+  return (
+    <div>
+      <Button>Click me!</Button>
+      <Button color='red' size='sm'>
+        Click me!
+      </Button>
+      <Button color='blue' size='lg'>
+        Click me!
+      </Button>
+    </div>
+  );
+}
+```
+
+## Props
+
+The `Button` component supports several props that can be used to customize its appearance and behavior:
+
+| Prop Name   | Type    | Default     | Description                                                                                                                                  |
+| ----------- | ------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `variant`   | string  | `'default'` | The variant of the button. Possible values are `'default'`, `'destructive'`, `'outline'`, `'subtle'`, `'ghost'`, `'link'`, and `'withRing'`. |
+| `size`      | string  | `'default'` | The size of the button. Possible values are `'default'`, `'sm'`, and `'lg'`.                                                                 |
+| `href`      | string  | `undefined` | The URL that the button should link to. If this prop is provided, the button will render as an anchor tag instead of a button.               |
+| `target`    | string  | `undefined` | The target attribute for the link.                                                                                                           |
+| `className` | string  | `undefined` | Additional classes to be added to the button.                                                                                                |
+| `disabled`  | boolean | `false`     | Whether the button is disabled or not.                                                                                                       |
+
+## Examples
+
+Here are some examples of how to use the `Button` component with different props:
+
+```jsx
+import React from "react";
+import Button from "chnsui-button";
+
+function App() {
+  return (
+    <div>
+      <Button variant='default'>Default Button</Button>
+      <Button variant='destructive'>Destructive Button</Button>
+      <Button variant='outline'>Outline Button</Button>
+      <Button variant='subtle'>Subtle Button</Button>
+      <Button variant='ghost'>Ghost Button</Button>
+      <Button variant='link' href='https://google.com' target='_blank'>
+        Link Button
+      </Button>
+      <Button variant='withRing'>Button with Ring</Button>
+      <Button size='sm'>Small Button</Button>
+      <Button size='lg'>Large Button</Button>
+      <Button className='bg-yellow-500'>Custom Class Button</Button>
+      <Button disabled>Disabled Button</Button>
+    </div>
+  );
+}
+```
