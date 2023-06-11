@@ -20,6 +20,7 @@
   "dependencies": {
     "chnsui": "^0.9.0",
     "framer-motion": "^10.12.16",
+    "lottie-react": "^2.4.0",
     "next": "^13.0.6",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
