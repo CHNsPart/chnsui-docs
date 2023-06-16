@@ -23,53 +23,57 @@ The `Paragraph` component is a versatile text component that can display text in
 And here's an example of how to use the `Paragraph` component with some of its props:
 
 ```jsx
-import Paragraph from "./components/Paragraph";
+import { Paragraph } from 'chnsui'
+import 'chnsui/dist/styles.css'
 
 function MyComponent() {
   return (
     <>
-      <Paragraph variant={"transparent"} colors='warning' badge={"warning"}>
+      <Paragraph variant={"transparent"} colors="warning" badge={"warning"}>
         This is a warning message.
       </Paragraph>
-      <Paragraph sizes='lg' align='center' decoration='lineThrough'>
-        This paragraph has large font size, centered text, and a line-through
-        decoration.
+      <Paragraph sizes="lg" align="center" decoration="lineThrough">
+        This paragraph has large font size, centered text, and a line-through decoration.
       </Paragraph>
     </>
-  );
+  )
 }
 ```
+
+import { MyParagraphOne, MyParagraphTwo } from 'components/MyParagraph.tsx'
+
+<MyParagraphOne/>
 
 ### Full Example:
 
 ```jsx
-import Paragraph from "./Paragraph";
+import { Paragraph } from 'chnsui'
+import 'chnsui/dist/styles.css'
 
 const App = () => {
   return (
     <>
-      <Paragraph bg colors='secondary'>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptatem
-        incidunt deleniti modi voluptate, hic cumque adipisci eveniet error
-        exercitationem, vitae voluptatum ducimus. Maiores enim totam aperiam
-        explicabo a quae. Lorem ipsum dolor sit amet consectetur, adipisicing
-        elit. Sit voluptatem incidunt deleniti modi voluptate, hic cumque
-        adipisci eveniet error exercitationem, vitae voluptatum ducimus. Maiores
-        enim totam aperiam explicabo a quae.
+      <Paragraph bg colors="secondary">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit voluptatem 
+          incidunt deleniti modi voluptate, hic cumque adipisci eveniet error exercitationem,
+          vitae voluptatum ducimus. Maiores enim totam aperiam explicabo a quae. Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Sit voluptatem incidunt deleniti modi 
+          voluptate, hic cumque adipisci eveniet error exercitationem, vitae voluptatum ducimus.
+          Maiores enim totam aperiam explicabo a quae.
       </Paragraph>
-
-      <div className='w-full flex flex-row gap-5'>
-        <Paragraph colors='dark' variant={"transparent"} badge={"dark"}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum at
-          consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Illum at consectetur.
+      
+      <div className="w-full flex flex-row gap-5">
+        <Paragraph colors="dark" variant={"transparent"} badge={"dark"}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum at consectetur. 
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum at consectetur.
         </Paragraph>
-        <Paragraph colors='warning' badge={"warning"} variant={"transparent"}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum at
-          consectetur.
+        <Paragraph colors="warning" badge={"warning"} variant={"transparent"}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum at consectetur.
         </Paragraph>
       </div>
     </>
-  );
-};
+  )
+}
 ```
+
+<MyParagraphTwo/>

@@ -8,20 +8,39 @@ npm install chnsui
 
 ## Usage
 
+### Global Level
+You need to use the stles.css in the entire application from _app.js/ts so that all components will be able to access global styles provided by this library.
+
+```jsx filename="_app.tsx" copy
+import '@/styles/globals.css'
+import type { AppProps } from 'next/app'
+// Your imports
+import { Button } from "chnsui";
+import 'chnsui/dist/styles.css'
+
+export default function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
+}
+
+```
+
+### Component Level
+
 Once installed, you can import and use any component from CHNsUI in your project
 
 ```jsx filename="MyComponent.tsx" copy
 import { Button } from "chnsui";
+import 'chnsui/dist/styles.css'
 
 function MyComponent() {
   return <Button>Click me!</Button>;
 }
 ```
-
-import MyButton from "../components/MyButton";
 import { Button } from "chnsui";
+import 'chnsui/dist/styles.css'
 
-<MyButton />
-<Button color='red' size='sm'>
-  Click me{" "}
+<div className='flex justify-center items-center w-full py-5'>
+<Button>
+  Click me
 </Button>
+</div>

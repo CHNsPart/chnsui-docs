@@ -1,25 +1,7 @@
-# Table
-
-The Table component is a customizable `Table` wrapper that provides styling and variant options for creating tables in React applications.
-
-## Props:
-
-| Prop Name | Type                            | Default Value | Description                                              |
-| --------- | ------------------------------- | ------------- | -------------------------------------------------------- |
-| variant   | `'default' \| 'bg' \| 'border'` | `null`        | The variant applied to the table head.                   |
-| className | `string`                        | `undefined`   | Additional CSS class to apply to the table head element. |
-| alignment | `'left' \| 'center' \| 'right'` | `'left'`      | The horizontal alignment of the table head content.      |
-| children  | `React.ReactNode \| null`       | `null`        | The content to display within the table head.            |
-
-Note: The `...rest` prop in the `Table` component is used to pass any additional HTML attributes to the underlying `<table>` element.
-
-## Example:
-
-```jsx
 import { Paragraph } from "chnsui";
 import { Table, TableHead, TableBody, Td, Th, Tr } from "chnsui";
 import 'chnsui/dist/styles.css'
-
+ 
 export const TableRaw: React.FC = () => {
   return (
     <div className='flex flex-col gap-5'>
@@ -73,9 +55,11 @@ export const TableRawSecondary: React.FC = () => {
     </div>
   );
 };
-
+ 
 export const TableSimple = () => {
   return (
+    <div className='flex flex-col gap-5'>
+    <Paragraph>Simple Table</Paragraph>
     <Table padding="all" alignmentment="center" variant="bg" className="custom-table">
       <TableHead variant="bg" alignment="center">
         <Tr>
@@ -94,15 +78,6 @@ export const TableSimple = () => {
         </Tr>
       </TableBody>
     </Table>
+    </div>
   );
 };
-```
-import { TableRaw, TableRawSecondary, TableSimple } from 'components/MyTable.tsx'
-
-    <div className="flex flex-col gap-5 justify-center items-center w-full px-5 py-16 border border-white/20 rounded-lg">
-      <TableRaw/>
-      <TableRawSecondary/>
-      <TableSimple/>
-    </div>
-
-And here's an example of how to use the `Table` component with some of its props

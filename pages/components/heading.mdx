@@ -24,22 +24,25 @@ Here's a table documentation of the component's props:
 
 And here's an example of how to use the `Heading` component:
 
+import MyHeading from 'components/MyHeading.tsx'
+
 ```jsx
 import React from 'react';
 import { Heading } from 'chnsui';
+import 'chnsui/dist/styles.css'
 
 const App = () => {
   return (
     <div>
-      <Heading
-        variant="h1"
-        colors="primary"
-        weight="bold"
-        align="center"
-        transform="uppercase"
-        decoration="noUnderline"
-        quickie="q_grad_watermelone x_bounce"
-        animations="x_wave"
+      <Heading 
+        variant="h1" 
+        colors="primary" 
+        weight="bold" 
+        align="center" 
+        transform="uppercase" 
+        decoration="noUnderline" 
+        quickie="q_grad_watermelone x_bounce" 
+        animations="x_wave" 
         sectionWidth="full"
       >
         Hello, world!
@@ -47,6 +50,8 @@ const App = () => {
   )
 }
 ```
+
+<MyHeading/>
 
 In this example, we import the `Heading` component from the Chakra UI library and use it to render a heading on our website. We pass two props to the `Heading` component: `as` and `size`.
 

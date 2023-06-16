@@ -3,18 +3,15 @@
 A customizable button component with various color and size options.
 
 ```jsx filename="MyComponent.tsx" copy
-import { Button } from "chnsui";
+import { Button } from 'chnsui';
+import 'chnsui/dist/styles.css'
 
 function MyComponent() {
   return (
     <div>
       <Button>Click me!</Button>
-      <Button color='red' size='sm'>
-        Click me!
-      </Button>
-      <Button color='blue' size='lg'>
-        Click me!
-      </Button>
+      <Button color="red" size="sm">Click me!</Button>
+      <Button color="blue" size="lg">Click me!</Button>
     </div>
   );
 }
@@ -38,26 +35,31 @@ The `Button` component supports several props that can be used to customize its 
 Here are some examples of how to use the `Button` component with different props:
 
 ```jsx
-import React from "react";
-import Button from "chnsui-button";
+import React from 'react';
+import { Button } from 'chnsui';
+import 'chnsui/dist/styles.css'
 
 function App() {
   return (
     <div>
-      <Button variant='default'>Default Button</Button>
-      <Button variant='destructive'>Destructive Button</Button>
-      <Button variant='outline'>Outline Button</Button>
-      <Button variant='subtle'>Subtle Button</Button>
-      <Button variant='ghost'>Ghost Button</Button>
-      <Button variant='link' href='https://google.com' target='_blank'>
+      <Button variant="default">Default Button</Button>
+      <Button variant="destructive">Destructive Button</Button>
+      <Button variant="outline">Outline Button</Button>
+      <Button variant="subtle">Subtle Button</Button>
+      <Button variant="ghost">Ghost Button</Button>
+      <Button variant="link" href="https://google.com" target="_blank">
         Link Button
       </Button>
-      <Button variant='withRing'>Button with Ring</Button>
-      <Button size='sm'>Small Button</Button>
-      <Button size='lg'>Large Button</Button>
-      <Button className='bg-yellow-500'>Custom Class Button</Button>
+      <Button variant="withRing">Button with Ring</Button>
+      <Button size="sm">Small Button</Button>
+      <Button size="lg">Large Button</Button>
+      <Button className="bg-yellow-500">Custom Class Button</Button>
       <Button disabled>Disabled Button</Button>
     </div>
   );
 }
 ```
+
+import MyButton from 'components/MyButton.tsx'
+
+<MyButton/>
