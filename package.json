@@ -7,10 +7,6 @@
     "build": "next build",
     "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CHNsPart/chnsui-docs.git"
-  },
   "author": "Touhidul Islam Chayan",
   "license": "MIT",
   "dependencies": {
