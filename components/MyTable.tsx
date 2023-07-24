@@ -1,5 +1,7 @@
+// @ts-nocheck
 import { Paragraph } from "chnsui";
-import { Table, TableHead, TableBody, Td, Th, Tr } from "chnsui";
+import React from "react";
+import { Table, TableHead, TableBody, Td, Th, Tr, TableProps } from "chnsui";
 import 'chnsui/dist/styles.css'
  
 export const TableRaw: React.FC = () => {

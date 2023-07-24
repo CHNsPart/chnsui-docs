@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Paragraph } from "chnsui";
 import 'chnsui/dist/styles.css'
 

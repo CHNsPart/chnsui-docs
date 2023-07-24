@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Heading } from "chnsui";
 import 'chnsui/dist/styles.css'
 

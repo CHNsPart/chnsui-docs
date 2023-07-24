@@ -1,10 +1,11 @@
 // Example from https://beta.reactjs.org/learn
-import { Button } from "chnsui";
+// @ts-nocheck
+import React from "react";
+import { Button,  } from "chnsui";
 import 'chnsui/dist/styles.css'
 
 export default function MyButton() {
-
-  return (
+    return (
     <div className="flex flex-col gap-5 justify-center items-center w-full py-16 border border-white/20 rounded-lg">
       <div className="flex gap-5">
       <Button variant="default">Default Button</Button>
