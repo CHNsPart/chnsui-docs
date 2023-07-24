@@ -9,14 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CHNsPart/chnsui.git"
+    "url": "git+https://github.com/CHNsPart/chnsui-docs.git"
   },
   "author": "Touhidul Islam Chayan",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/CHNsPart/chnsui/issues"
-  },
-  "homepage": "https://github.com/CHNsPart/chnsui#readme",
   "dependencies": {
     "chnsui": "^0.1.2",
     "framer-motion": "^10.12.16",
