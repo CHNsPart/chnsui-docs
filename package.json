@@ -5,13 +5,12 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
-        "start": "node server.js"
+        "start": "next start"
     },
     "author": "Touhidul Islam Chayan",
     "license": "MIT",
     "dependencies": {
         "chnsui": "^0.1.2",
-        "express": "^4.18.2",
         "lottie-react": "^2.4.0",
         "next": "^13.0.6",
         "nextra": "latest",
